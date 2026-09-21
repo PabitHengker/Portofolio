@@ -251,6 +251,10 @@ body {
 }
 
 /* Floating Social Bar */
+.aboutImageContainer {
+    position: relative;
+}
+
 .socialBar {
     position: absolute;
     bottom: -20px;
@@ -263,6 +267,7 @@ body {
     gap: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(226, 232, 240, 0.8);
+    z-index: 10;
 }
 
 .socialBar a {
