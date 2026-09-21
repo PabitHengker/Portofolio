@@ -254,23 +254,47 @@ body {
 
 /* Floating Social Bar */
 .socialBar {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background: #ffffff;
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* KHUSUS UNTUK YANG DI FOTO ABOUT (Melayang) */
+.aboutImageContainer .socialBar {
     position: absolute;
-    bottom: -22px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--white);
-    padding: 12px 24px;
-    border-radius: 50px;
-    display: flex;
-    gap: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    z-index: 100;
+    z-index: 99;
+}
+
+/* KHUSUS UNTUK YANG DI FOOTER (Posisi Menyesuaikan Footer) */
+.footerSocials .socialBar {
+    position: static;
+    transform: none;
+    width: fit-content;
+    background: #1e293b; /* Menyesuaikan warna gelap footer */
+    border-color: #334155;
+}
+
+.footerSocials .socialBar a {
+    color: #94a3b8;
+}
+
+.footerSocials .socialBar a:hover {
+    color: #c084fc;
 }
 
 .socialBar a {
     color: var(--gray-muted);
     font-size: 18px;
+    text-decoration: none;
     display: inline-block;
     transition: all 0.2s ease;
 }
