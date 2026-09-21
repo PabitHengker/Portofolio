@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Nyoman Panit | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="jumbo.css">
+    <script src="jumbo.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <header class="header">
+        <nav class="navBar">
+            <div class="namaNavBar">
+                <a href="#"><b>I Nyoman Panit</b></a>
+            </div>
+
+            <ul class="navLinks">
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="btnNav">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- HERO SECTION -->
+    <section class="heroSection" id="home">
+        <div class="heroContainer">
+            
+            <!-- Kolom Kiri Teks -->
+            <div class="perkenalanAwal">
+                <div class="infoPerkenalan">
+                    <h1>
+                        Hello, I'm <br>
+                        <span class="highlightNama">I Nyoman Panit</span>
+                    </h1>
+                </div>
+
+                <p class="heroDesc">
+                    I'm a Mobile & Software Engineer based in Bekasi. 
+                    I strive to build immersive applications through 
+                    carefully crafted code, clean architecture, and user-centric design.
+                </p>
+
+                <div class="heroCta">
+                    <a href="#contact" class="hireMeButton">Hire Me! <i class="fas fa-paper-plane"></i></a>
+                </div>
+
+                <!-- 3 Kotak Info -->
+                <div class="statGrid">
+                    <div class="statCard">
+                        <h3>Software Engineer</h3>
+                        <p>Binus University</p>
+                    </div>
+                    <div class="statCard">
+                        <h3>Leadership</h3>
+                        <p>Head Of Organization</p>
+                    </div>  
+                    <div class="statCard">
+                        <h3>Location</h3>
+                        <p>Bekasi, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan Gambar Profil -->
+            <div class="masukinGambarWrapper">
+                <div class="gambarCard">
+                    <img src="assets/profile.png" alt="I Nyoman Panit" class="gambarMuka">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="aboutSection" id="about">
+        <div class="aboutCard">
+            <!-- Foto & Social Links -->
+            <div class="aboutImageContainer">
+                <img src="assets/profile.png" alt="I Nyoman Panit" class="aboutMuka">
+
+                <div class="socialBar">
+                    <a href="https://github.com" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Teks Deskripsi About -->
+            <div class="aboutContent">
+                <h2 class="aboutTitle">I am a Software Engineer</h2>
+
+                <p class="aboutText">
+                    I specialize in building mobile applications using <strong>Flutter & Dart</strong>,
+                    as well as designing scalable <strong>REST API backends</strong>. 
+                    I focus on clean architecture, robust database integration, 
+                    and smooth user experiences.
+                </p>
+
+                <p class="aboutText">
+                    Beyond mobile dev, I explore machine learning model training, Docker containerization, 
+                    and algorithmic problem solving.
+                </p>
+
+                <div class="aboutActions">
+                    <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                    <a href="assets/cv.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <!-- PORTFOLIO SHOWCASE SECTION -->
+    <section class="portfolioSection" id="portfolio">
+        <div class="sectionHeader">
+            <h2>Featured Projects</h2>
+            <p>Berikut adalah 3 proyek unggulan yang telah saya kembangkan.</p>
+        </div>
+
+        <div class="portfolioGrid">
+            <!-- Project 1 -->
+            <div class="projectCard">
+                <div class="projectImgBox">
+                    <img src="assets/ecomanage-1.jpeg" alt="WasteChecker App">
+                </div>
+                <div class="projectInfo">
+                    <span class="projectBadge">Flutter & YOLO11</span>
+                    <h3>WasteChecker</h3>
+                    <p>Aplikasi klasifikasi sampah real-time terintegrasi Machine Learning dan Firebase backend.</p>
+                    <a href="jumboProject.html#ecomanage" class="projectLink">More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="projectCard">
+                <div class="projectImgBox">
+                    <img src="assets/cardguard-proj.jpeg" alt="CardGuard App">
+                </div>
+                <div class="projectInfo">
+                    <span class="projectBadge">Fraud Detection & SMOTE</span>
+                    <h3>CardGuard</h3>
+                    <p>Sistem keamanan transaksi finansial dengan teknik balancing data SMOTE dan arsitektur presisi tinggi.</p>
+                    <a href="jumboProject.html#cardfrauddetection" class="projectLink">More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="projectCard">
+                <div class="projectImgBox">
+                    <img src="assets/uangku-proj.png" alt="UangKu App">
+                </div>
+                <div class="projectInfo">
+                    <span class="projectBadge">Fintech & Banking API</span>
+                    <h3>UangKu</h3>
+                    <p>Platform manajemen keuangan yang terhubung ke API Bank dan e-wallet.</p>
+                    <a href="jumboProject.html#uangku" class="projectLink">More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contactSection" id="contact">
+        <div class="contactContainer">
+            <div class="contactHeader">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2>Let's Work Together</h2>
+                <p>Punya ide proyek menarik atau ingin berdiskusi? Silakan kirim pesan melalui formulir di bawah ini.</p>
+            </div>
+
+            <form class="contactForm" action="#" method="POST">
+                <div class="formGroupRow">
+                    <div class="formGroup">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="I Nyoman Panit" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Project Discussion / Job Opportunity" required>
+                </div>
+
+                <div class="formGroup">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tuliskan detail pesan Anda di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btnSubmit">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerBrand">
+                <h3>I Nyoman Panit</h3>
+                <p>Mobile & Software Engineer based in Bekasi, Indonesia.</p>
+            </div>
+
+            <div class="footerNav">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>
+                        <a href="index.html#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Featured Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerSocials">
+                <h4>Connect</h4>
+                <div class="socialIcons">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerBottom">
+            <p>&copy; 2026 I Nyoman Panit. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
